@@ -10,17 +10,9 @@ public:
 		if (number > 1)
 		{
 			int divisor = 2;
-			if (number == 4)
+			if (number == 4 || number == 6 || number == 9)
 			{
-				while (number % divisor == 0)
-				{
-					result.push_back(divisor);
-					number /= divisor;
-				}
-			}
-			else if(number==6)
-			{
-				for(divisor =2; number>1; divisor++)
+				for (divisor = 2; number > 1; divisor++)
 				{
 					while (number % divisor == 0)
 					{
